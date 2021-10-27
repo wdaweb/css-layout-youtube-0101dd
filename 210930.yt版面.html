@@ -41,20 +41,6 @@
     }
 
 
-    .ul1 {
-      margin: 55px 10px 20px 20px;
-    }
-
-    .ul2 li {
-      display: inline-block;
-      padding: 0 2px;
-    }
-
-    .ul2 li a {
-      font-size: 8px;
-      line-height: 8px;
-      color: rgb(131, 131, 131);
-    }
 
     h5 {
       font-size: 10px;
@@ -67,15 +53,15 @@
     }
 
     ul {
-      margin: 10px 20px;
+      margin: 10px 0px;
     }
 
     li {
-      margin-top: 10px;
+      padding: 7px;
     }
 
     li a {
-      margin-top: 15px;
+      margin: 15px 20px;
       font-size: 12px;
       color: rgb(0, 0, 0);
       text-decoration: none;
@@ -387,6 +373,24 @@
     p {
       font-size: 1rem;
     }
+
+    .ul1 li:hover {
+      background: #aaa;
+    }
+
+    .sideBar .bottom {
+      font-size: 12px;
+      margin: 10px 20px;
+    }
+
+    .sideBar .bottom a {
+      text-decoration: none;
+      color: rgb(131, 131, 131);
+    }
+
+    .underHead nav a:hover {
+      background: #eee;
+    }
   </style>
 
 </head>
@@ -400,12 +404,12 @@
         <i class="fas fa-bars"></i>
       </div>
       <ul class="ul1">
-        <li><a href="#"><i class="fas fa-house-user"></i>&emsp;首頁</a></li>
+        <li style="margin-top: 55px;"><a href="#"><i class="fas fa-house-user"></i>&emsp;首頁</a></li>
         <li><a href="#"><i class="far fa-compass"></i>&emsp;探索</a></li>
         <li><a href="#"><i class="far fa-folder-open"></i>&emsp;訂閱內容</a></li>
       </ul>
       <hr>
-      <ul>
+      <ul class="ul1">
         <li><a href="#"><i class="far fa-bookmark"></i>&emsp;媒體庫</a></li>
         <li><a href="#"><i class="far fa-clock"></i>&emsp;觀看紀錄</a></li>
       </ul>
@@ -414,7 +418,7 @@
       <a href="#" class="loginLeft"><i class="far fa-user-circle"></i>&nbsp登入</a>
       <hr style="margin-top: 15px;">
       <h5>YOUTUBE 精選</h5>
-      <ul>
+      <ul class="ul1">
         <li><a href="#"><i class="fas fa-music"></i>&emsp;音樂</a></li>
         <li><a href="#"><i class="fas fa-trophy"></i>&emsp;體育</a></li>
         <li><a href="#"><i class="fas fa-gamepad"></i>&emsp;遊戲</a></li>
@@ -424,39 +428,40 @@
         <li><a href="#"><i class="fas fa-ticket-alt"></i>&emsp;360度影片</a></li>
       </ul>
       <hr>
-      <ul>
+      <ul class="ul1">
         <li><a href="#"><i class="far fa-plus-square"></i>&emsp;瀏覽頻道</a></li>
       </ul>
       <hr>
       <h5>更多 YOUTUBE 功能</h5>
-      <ul>
+      <ul class="ul1">
         <li><a href="#"><i class="far fa-user-circle"></i>&emsp;YouTube Premium</a></li>
         <li><a href="#"><i class="fab fa-soundcloud"></i>&emsp;直播</a></li>
       </ul>
       <hr>
-      <ul>
+      <ul class="ul1">
         <li><a href="#"><i class="fas fa-cog"></i>&emsp;設定</a></li>
         <li><a href="#"><i class="far fa-flag"></i>&emsp;檢舉紀錄</a></li>
         <li><a href="#"><i class="far fa-question-circle"></i>&emsp;說明</a></li>
         <li><a href="#"><i class="fas fa-exclamation-circle"></i>&emsp;提供意見</a></li>
       </ul>
       <hr>
-      <ul class="ul2">
-        <li><a href="#">簡介</a></li>
-        <li><a href="#">媒體</a></li>
-        <li><a href="#">版權</a></li>
-        <li><a href="#">與我們聯絡</a></li>
-        <li><a href="#">創作者</a></li>
-        <li><a href="#">廣告</a></li>
-        <li><a href="#">開發人員</a></li>
-      </ul>
-      <ul class="ul2">
-        <li><a href="#">條款</a></li>
-        <li><a href="#">隱私權</a></li>
-        <li><a href="#">政策與安全性</a></li>
-        <li><a href="#">YouTube 運作方式</a></li>
-        <li><a href="#">測試新功能</a></li>
-      </ul>
+      <div class="bottom">
+        <a href="#">簡介</a>
+        <a href="#">媒體</a>
+        <a href="#">版權</a>
+        <a href="#">與我們聯絡</a>
+        <a href="#">創作者</a>
+        <a href="#">廣告</a>
+        <a href="#">開發人員</a>
+      </div>
+
+      <div class="bottom">
+        <a href="#">條款</a>
+        <a href="#">隱私權</a>
+        <a href="#">政策與安全性</a>
+        <a href="#">YouTube 運作方式</a>
+        <a href="#">測試新功能</a>
+      </div>
       <footer>&copy;2021 Google LLC</footer>
 
 
